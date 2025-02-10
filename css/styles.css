@@ -17,14 +17,14 @@
 
 .main-content {
   display: flex;
-  justify-content: space-between; /* Espaço entre os elementos */ /* Espaço entre os elementos */
+  justify-content: space-between; /* Espaçamento entre os elementos */
   align-items: center; /* Centraliza os elementos verticalmente */
   background-image: url("../img/hrz-5.jpg");
   background-size: cover; /* Redimensiona a imagem de fundo */
   background-position: center; /* Centraliza a imagem de fundo */
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: overlay;
-  height: 90vh; /* Ocupa toda a altura da janela */
+  height: 90vh; /* Altura do container principal */
   padding: 0 300px;
 }
 
