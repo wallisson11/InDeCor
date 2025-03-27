@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InDecor</title>
+    <!-- Text font -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main class="main-content">
+      <div class="left-column">
+        <h2>InDecor</h2>
+        <p id="evento">
+          UM EVENTO PARA <br />
+          REVOLUCIONAR A <br />SUA CRIATIVIDADE
+        </p>
+        <p id="data">Data do evento: <br /></p>
+        <strong>Domingo, 28 de Maio, a partir das 14h</strong>
+      </div>
+      <div class="form-container">
+        <!-- Formulário -->
+        <form action="/submit" method="post">
+          <p>Preencha o formulário para receber os detalhes do evento</p>
+          <p>
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+              placeholder="Digite seu nome"
+            />
+
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Digite seu melhor e-mail"
+            />
+
+            <label for="telefone">Telefone</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              required
+              placeholder="Número de Whatsapp"
+            />
+
+            <label for="opcoes">Principal Interesse</label>
+            <select id="opcoes" name="opcoes">
+              <option>Selecione</option>
+              <option value="1">Opção 1</option>
+              <option value="2">Opção 2</option>
+              <option value="3">Opção 3</option>
+            </select>
+
+            <button type="submit">QUERO ME INSCREVER</button>
+          </p>
+        </form>
+      </div>
+    </main>
+    <!-- O que você vai aprender -->
+    <section class="background_gray">
+      <p id="p_bold">O que você vai aprender:</p>
+    </section>
+    <!-- ************ -->
+    <section class="secondary-container">
+      <div class="itens">
+        <div class="item-content">
+          <img src="img/sqr-1.jpg" />
+          <p>
+            Alguma coisa muito legal, que <br />
+            vai fazer a diferença na vida do <br />
+            participante.
+          </p>
+        </div>
+      </div>
+      <div class="itens">
+        <div class="item-content">
+          <img src="img/sqr-2.jpg" />
+          <p>
+            Alguma coisa muito legal, que <br />
+            vai fazer a diferença na vida do <br />
+            participante.
+          </p>
+        </div>
+      </div>
+      <div class="itens">
+        <div class="item-content">
+          <img src="img/sqr-3.jpg" />
+          <p>
+            Alguma coisa muito legal, que <br />
+            vai fazer a diferença na vida do <br />
+            participante.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- LOCAL DE DESTAQUE -->
+    <section class="destaque">
+      <div class="destaque-item">
+        <i class="bi bi-geo-alt-fill"></i>
+        <p>Rua do evento, 1333 <br />Bairro <br />Abertura: 14h</p>
+      </div>
+      <div class="destaque-item-2">
+        <h2>LOCAL DE DESTAQUE</h2>
+        <p>
+          O evento será realizado em um local prestigiado pelos <br />
+          amantes de Design de Interiores, onde teremos exemplos de <br />
+          vários ambientes, tanto internos como externos.
+        </p>
+      </div>
+    </section>
+    <!-- Ambientes -->
+    <section class="container-ambiente">
+      <div class="ambiente-img">
+        <img src="img/hrz-3.jpg" alt="Imagem do ambiente" />
+      </div>
+      <div class="ambiente-texto">
+        <h2 class="ambiente-titulo">
+          Conheça os ambientes que você vai aprender a decorar
+        </h2>
+      </div>
+    </section>
+
+    <section class="container-ambiente">
+      <div class="ambiente-texto">
+        <h3 class="ambiente-titulo">Detalhes</h3>
+        <ul>
+          <li>Posicionamentos</li>
+          <li>Aproveitamento de espaço</li>
+          <li>Combinações de cores</li>
+          <li>Organização</li>
+          <li><strong>E muito mais...</strong></li>
+        </ul>
+      </div>
+      <div class="ambiente-img">
+        <img src="img/hrz-4.jpg" alt="Imagem do ambiente" />
+      </div>
+    </section>
+
+    <section class="container-ambiente">
+      <div class="ambiente-img">
+        <img src="img/hrz-5.jpg" alt="Imagem do ambiente" />
+      </div>
+      <div class="ambiente-texto">
+        <h3 class="ambiente-titulo">Objetos</h3>
+        <ul>
+          <li>Cadeiras</li>
+          <li>Mesas</li>
+          <li>Espelhos</li>
+          <li>Plantas</li>
+          <li>Cortinas</li>
+          <li><strong>E muito mais...</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Gostou? Então se inscreva -->
+    <section class="background-hrz6">
+      <p>Gostou? Então se inscreva:</p>
+      <button>SOLICITAR INSCRIÇÃO</button>
+    </section>
+    <footer>
+      <h3>InDecor</h3>
+      <p id="p1">A evolução da decoração de interiores</p>
+      <p><strong>Entre em contato: </strong>oi@indecor.com.br</p>
+      <p><strong>Ou pelo telefone: </strong>(55)9990-9999</p>
+    </footer>
+  </body>
+</html>
+
+<!-- Site ficou Maneiro!!!! Feito por Wallisson Marcelino-->

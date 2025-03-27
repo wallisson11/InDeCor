@@ -1,0 +1,345 @@
+:root {
+  --primary: #00baf2;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #5d5d5d;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main inDecor */
+
+.main-content {
+  display: flex;
+  justify-content: space-between; /* Espaço entre os elementos */ /* Espaço entre os elementos */
+  align-items: center; /* Centraliza os elementos verticalmente */
+  background-image: url("../img/hrz-5.jpg");
+  background-size: cover; /* Redimensiona a imagem de fundo */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  height: 90vh; /* Ocupa toda a altura da janela */
+  padding: 0 300px;
+}
+
+.main-content .left-column {
+  flex: 1;
+}
+
+.left-column h2 {
+  color: var(--primary);
+  font-size: 4rem;
+}
+
+.left-column #evento {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.left-column #data {
+  color: var(--text-color);
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.left-column strong {
+  color: var(--primary);
+  font-size: 22px;
+}
+
+/* Formulário */
+.form-container {
+  width: 100%; /* Ocupa toda a largura do container */
+  max-width: 500px; /* Limita a largura do formulário */
+  padding: 20px;
+  background-color: var(--secondary);
+}
+
+.form-container select {
+  width: 100%; /* Ocupa toda a largura do container */
+  max-width: 500px; /* Limita a largura do formulário */
+  padding: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-container p {
+  margin-bottom: 1.3rem;
+  font-size: 1.7rem;
+  text-align: left;
+}
+
+.form-container label {
+  display: block; /* Faz com que o texto fique em uma linha */
+  margin-bottom: 8px;
+  color: var(--text-tertiary);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.form-container input,
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-container button {
+  /* Estiliza o botão */
+  background-color: var(--primary);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  height: 3.5rem;
+}
+
+.form-container button:hover {
+  background-color: #0097c0; /* Cor do botão ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-container {
+    max-width: 90%;
+    margin-top: 20px;
+  }
+}
+
+/* O que voçê vai aprender: */
+.background_gray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  background-color: var(--secondary);
+  font-size: 24px;
+}
+
+.background_gray #p_bold {
+  font-weight: 550;
+  font-size: 1.8rem;
+}
+
+/* ************************ */
+
+.secondary-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 400px;
+}
+
+.itens {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo da div */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column; /* Coloca a imagem e o texto em coluna */
+  justify-content: center; /* Centraliza verticalmente dentro do contêiner */
+  align-items: center; /* Centraliza horizontalmente dentro do contêiner */
+  text-align: center; /* Garante que o texto também fique centralizado */
+}
+
+.itens img {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem; /* Adiciona um pequeno espaço entre a imagem e o texto */
+}
+
+.itens p {
+  color: var(--secondary); /* Cor do texto */
+  font-size: 1.5rem; /* Tamanho do texto */
+}
+
+/* LOCAL DE DESTAQUE */
+.destaque {
+  display: flex;
+  background-image: url("../img/hrz-1.jpg");
+  background-position: center;
+  background-size: 95%; /* Redimensiona a imagem de fundo */
+  background-color: rgba(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  align-items: center;
+  justify-content: space-between;
+  height: 40vh;
+  padding: 0 500px; /* Para garantir que o conteúdo não fique muito colado nas bordas */
+}
+
+.destaque-item {
+  display: flex; /* Alinha o ícone e o texto lado a lado */
+  align-items: center; /* Alinha verticalmente o ícone e o texto */
+  text-align: center; /* Alinha o texto à esquerda */
+  margin: 10px; /* Adiciona espaçamento entre os itens */
+}
+
+.destaque-item i {
+  color: var(--primary);
+  font-size: 5.2rem;
+  margin-right: 1.5rem; /* Adiciona um pequeno espaço entre o ícone e o texto */
+}
+
+.destaque-item p {
+  color: var(--text-color); /* Cor do texto */
+  font-size: 1.7rem; /* Tamanho do texto */
+}
+
+.destaque-item-2 h2 {
+  color: var(--primary);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.destaque-item-2 p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+/* Ambientes */
+.container-ambiente {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 3rem 4rem;
+  max-width: 2200px;
+  margin: 0 auto;
+}
+
+.ambiente-img,
+.ambiente-texto {
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+  justify-content: flex-start; /* Garante que o conteúdo comece do topo */
+  align-items: flex-start; /* Alinha ao início (esquerda) */
+  flex: 1;
+  max-width: 800px;
+}
+
+.ambiente-img img {
+  width: 100%;
+  max-width: 1200px; /* Aumenta o tamanho máximo da imagem */
+  height: auto;
+  object-fit: cover;
+}
+
+.ambiente-texto {
+  text-align: left;
+  margin-left: 2rem; /* Espaço à esquerda do texto */
+}
+
+.ambiente-texto h2 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem; /* Distância entre o título e a lista */
+  color: var(--primary-color);
+  text-align: left; /* Alinha o título à esquerda */
+}
+
+.ambiente-texto h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem; /* Distância entre o título e a lista */
+  color: var(--primary-color);
+  text-align: left; /* Alinha o título à esquerda */
+}
+
+.ambiente-texto ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Ajuste no recuo da lista */
+  margin-top: 0; /* Remove o espaço extra acima da lista */
+}
+
+.ambiente-texto ul li {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; /* Distância entre os itens da lista */
+}
+
+/* Gostou? Então se inscreva */
+.background_gray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  background-color: var(--secondary);
+  font-size: 24px;
+}
+
+.background-hrz6 {
+  display: flex; /* Usando flexbox */
+  flex-direction: column; /* Alinha o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  height: 30vh;
+  background-image: url("../img/hrz-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+}
+
+.background-hrz6 p {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 2.5rem; /* Espaçamento entre o texto e o botão */
+}
+
+.background-hrz6 button {
+  width: 25%; /* Faz o botão ocupar toda a largura disponível */
+  padding: 15px 0; /* Adiciona espaçamento no topo e na parte inferior do botão */
+  font-size: 1.4em; /* Ajuste o tamanho da fonte do botão */
+  background-color: var(--primary);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 25vh;
+}
+
+footer h3 {
+  color: var(--secondary);
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+footer #p1 {
+  margin-bottom: 2rem;
+}
+
+footer p {
+  color: var(--text-tertiary);
+  font-size: 1.3rem;
+}
+
+/* Feito por Matheus Senna */
