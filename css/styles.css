@@ -259,8 +259,9 @@
   text-align: left; /* Alinha o título à esquerda */
 }
 
-.ambiente-texto h3 {
-  font-size: 2.5rem;
+.ambiente-texto h3 { /* Subtítulo */
+  font-size: 3rem; /* Tamanho do texto do subtítulo */
+  font-size: 2.5rem; /* Tamanho do texto do subtítulo */
   margin-bottom: 1.5rem; /* Distância entre o título e a lista */
   color: var(--primary-color);
   text-align: left; /* Alinha o título à esquerda */
@@ -273,21 +274,22 @@
 }
 
 .ambiente-texto ul li {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Tamanho do texto da lista */
   margin-bottom: 1rem; /* Distância entre os itens da lista */
 }
 
 /* Gostou? Então se inscreva */
-.background_gray {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 12vh;
-  background-color: var(--secondary);
-  font-size: 24px;
+.background_gray {  /* Usando flexbox */
+  display: flex; /* Usando flexbox */
+  flex-direction: column; /* Alinha o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  align-items: center;  /* Centraliza o conteúdo horizontalmente */
+  height: 12vh; /* Altura do container */
+  background-color: var(--secondary);   /* Cor de fundo */
+  font-size: 24px; 
 }
 
-.background-hrz6 {
+.background-hrz {
   display: flex; /* Usando flexbox */
   flex-direction: column; /* Alinha o conteúdo verticalmente */
   justify-content: center; /* Centraliza o conteúdo verticalmente */
@@ -301,9 +303,11 @@
 }
 
 .background-hrz6 p {
-  font-size: 2.5rem;
-  color: var(--text-color);
-  font-weight: 500;
+  font-size: 2.5rem; /* Tamanho do texto */
+  color: var(--text-color); //* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 1.5rem; /* Espaçamento entre o texto e o botão */
+  font-weight: 500;   /* Peso da fonte */
   margin-bottom: 2.5rem; /* Espaçamento entre o texto e o botão */
 }
 
@@ -311,8 +315,8 @@
   width: 25%; /* Faz o botão ocupar toda a largura disponível */
   padding: 15px 0; /* Adiciona espaçamento no topo e na parte inferior do botão */
   font-size: 1.4em; /* Ajuste o tamanho da fonte do botão */
-  background-color: var(--primary);
-  color: var(--text-color);
+  background-color: var(--primary);   /* Cor de fundo do botão */
+  color: var(--text-color); /* Cor do texto do botão */
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -342,4 +346,4 @@ footer p {
   font-size: 1.3rem;
 }
 
-/* Feito por Matheus Senna */
+/* CAMPEÃO MUNDIAL CORINTHIANS */
